@@ -29,3 +29,7 @@ A network session refers to a connection or exchange of data between two endpoin
 | **Session Termination**| FIN flag (TCP connection close)               | No formal termination (stateless)             | QUIT command, both connections closed          | QUIT, FIN commands to terminate session       | SSH session closed after command execution    | Session ends with termination command (exit)   | SNMP response or timeout                       |
 | **Security**           | HTTPS (TLS/SSL) for encryption                | DNSSEC, DoH/DoT for encryption and integrity  | FTPS/SFTP for encryption                       | SMTPS (TLS/SSL) for encrypted mail transfer   | SSH (Strong encryption for secure login)       | Telnet has no encryption (plaintext)           | SNMPv3 (Authentication, encryption)             |
 | **Encryption**         | HTTPS encrypts all HTTP traffic               | DoH/DoT for encrypted DNS queries             | FTPS/SFTP encrypts both control and data       | SMTPS encrypts email transmission             | SSH encrypts the entire session                | No encryption (plaintext)                      | SNMPv3 offers encryption for sensitive data     |
+
+
+## Architecture
+![alt text](SessionGeneratorArchitecture.drawio.svg)
