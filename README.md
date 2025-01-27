@@ -27,8 +27,7 @@ A network session refers to a connection or exchange of data between two endpoin
 | **Payload**            | HTML, JSON, images, files, etc.               | Domain name, IP address                       | FTP commands, files, directory listings        | Email headers, body, attachments               | Command execution, session data                | Text commands and responses                    | SNMP MIB (Management Information Base) data    |
 | **Session Setup**      | TCP handshake (SYN, SYN-ACK, ACK)             | Simple UDP query                              | Control connection on port 21, Data on port 20 | Simple request-response (Mail command)        | TCP connection setup and authentication       | Connection and authentication with username/password | SNMP request to device or agent                |
 | **Session Termination**| FIN flag (TCP connection close)               | No formal termination (stateless)             | QUIT command, both connections closed          | QUIT, FIN commands to terminate session       | SSH session closed after command execution    | Session ends with termination command (exit)   | SNMP response or timeout                       |
-| **Security**           | HTTPS (TLS/SSL) for encryption                | DNSSEC, DoH/DoT for encryption and integrity  | FTPS/SFTP for encryption                       | SMTPS (TLS/SSL) for encrypted mail transfer   | SSH (Strong encryption for secure login)       | Telnet has no encryption (plaintext)           | SNMPv3 (Authentication, encryption)             |
-| **Encryption**         | HTTPS encrypts all HTTP traffic               | DoH/DoT for encrypted DNS queries             | FTPS/SFTP encrypts both control and data       | SMTPS encrypts email transmission             | SSH encrypts the entire session                | No encryption (plaintext)                      | SNMPv3 offers encryption for sensitive data     |
+
 
 
 ## Architecture
